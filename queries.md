@@ -78,6 +78,9 @@ FILTER
 PROJECT
 { name : 1 , founded_month : 1 }
 
+LIMIT
+1000
+
 ### 12. All the companies founded before 2000 that have an acquisition amount of more than 10.000.000
 
 FILTER
@@ -113,6 +116,9 @@ FILTER
 SORT
 { "acquisitions.price_amount" : -1 }
 
+LIMIT
+10
+
 ### 16. All the companies on the 'web' `category` that have more than 4000 employees. Sort them by the amount of employees in ascending order.
 
 FILTER
@@ -133,6 +139,9 @@ FILTER
 
 PROJECT
 { name : 1, acquisition : 1}
+
+LIMIT
+10
 
 ### 19. All the companies that have been founded between 2000 and 2010, but have not been acquired before 2011.
 
